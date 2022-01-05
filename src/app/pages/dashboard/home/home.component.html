@@ -1,0 +1,17 @@
+<nb-card>
+  <nb-card-header>
+    Users
+  </nb-card-header>
+
+  <nb-card-body>
+    <button _ngcontent-deh-c417="" nbbutton="" matripple="" hero=""
+      class="add_user mat-ripple size-medium shape-rectangle appearance-hero status-primary ng-star-inserted nb-transition"
+      aria-disabled="false" tabindex="0" (click)="addUser()">Add User</button>
+  </nb-card-body>
+
+  <nb-card-body>
+    <ng2-smart-table [settings]="settings" [source]="source" (deleteConfirm)="onDeleteConfirm($event)"
+      (custom)="Edit($event)">
+    </ng2-smart-table>
+  </nb-card-body>
+</nb-card>

@@ -1,0 +1,38 @@
+@import '../../../@theme/styles/themes';
+
+@include nb-install-component() {
+  nb-card {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+
+:host ::ng-deep tr .ng2-smart-actions{ display: flex; }
+
+:host ::ng-deep nbng2-st-tbody-custom {display: flex;}
+
+:host ::ng-deep ng2-st-tbody-edit-delete a.ng2-smart-action {display: inline-block !important;}
+:host ::ng-deep ng2-st-tbody-create-cancel a.ng2-smart-action {display: inline-block !important;}
+:host ::ng-deep ng2-st-tbody-custom a.ng2-smart-action.ng2-smart-action-custom-custom {
+    display: inline-block;
+    width: 80px;
+    text-align: center;
+}
+
+.add_user{
+    float: right;
+}
+:host ::ng-deep tr .ng2-smart-actions {
+		
+    height: 51px !important;
+}
+:host ::ng-deep ng2-st-tbody-custom a.ng2-smart-action.ng2-smart-action-custom-custom {
+    // display: inline-block;
+    width: 50px;
+    text-align: center;
+    border-right: 1px solid #edf1f7;
+}
+
+:host ::ng-deep .ng2-smart-actions{
+    padding: 10px 10px 15px 15px !important;
+}

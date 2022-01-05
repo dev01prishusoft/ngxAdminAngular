@@ -1,0 +1,52 @@
+<nb-card>
+  <nb-card-header>Add User</nb-card-header>
+  <nb-card-body>
+    <form [formGroup]="userForm" (ngSubmit)="onSubmit()">
+       <div class="row">
+        <div class="col-sm-6">
+    <div class="form-group">
+        <label for="exampleInputFristname" class="label">Frist name</label>
+        <input type="email" nbInput fullWidth id="exampleInputFristname" placeholder="Frist name"  formControlName="firstName">
+      </div>
+      </div>
+      <div class="col-sm-6">
+      <div class="form-group">
+        <label for="exampleInputLastname" class="label">Last name</label>
+        <input type="text" nbInput fullWidth id="exampleInputLastname" placeholder="Last name"  formControlName="lastName">
+      </div>
+      </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-6">
+    <div class="form-group">
+        <label for="exampleInputUsername" class="label">Username</label>
+        <input type="username" nbInput fullWidth id="exampleInputUsername" placeholder="Username"  formControlName="username">
+      </div>
+      </div>
+      <div class="col-sm-6">
+      <div class="form-group">
+        <label for="exampleInputEmail1" class="label">Email</label>
+        <input type="email" nbInput fullWidth id="exampleInputEmail1" placeholder="Email"  formControlName="email">
+      </div>
+      </div>
+      
+      </div>
+      <div class="row">
+        <div class="col-sm-6">
+    <div class="form-group">
+        <label for="exampleInputAge" class="label">Age</label>
+        <input type="number" nbInput fullWidth id="exampleInputAge" placeholder="Age"  formControlName="age">
+      </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="form-group">
+            <label for="exampleInputId" class="label">Id</label>
+            <input type="number" nbInput fullWidth id="exampleInputId" placeholder="id"  formControlName="id">
+          </div>
+          </div>
+       </div>
+     <button type="submit" nbButton status="primary">Submit</button>&nbsp;&nbsp;
+     <button type="button" nbButton status="danger" (click)="Back()">Back</button>
+    </form>
+  </nb-card-body>
+</nb-card>
